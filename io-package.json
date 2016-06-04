@@ -1,0 +1,30 @@
+{
+  "common": {
+    "name": "netatmo",
+    "version": "0.0.4",
+    "title": "Netatmo Adapter",
+    "desc": {
+      "en": "ioBroker Smarter Coffee Adapter",
+      "de": "ioBroker Smarter Coffee Adapter",
+      "ru": "ioBroker Smarter Coffee драйвер как образец"
+    },
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "mode": "daemon",
+    "icon": "smartercoffee.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/steinwedel/ioBroker.smartercoffee/master/admin/smartercoffee.png",
+    "keywords": [
+      "smartercoffee"
+    ],
+    "readme": "https://github.com/steinwedel/ioBroker.smartercoffee/blob/master/README.md",
+    "loglevel": "info",
+    "type": "hardware"
+  },
+  "native": {
+    "username": "",
+    "password": ""
+  },
+  "objects": [
+  ]
+}
