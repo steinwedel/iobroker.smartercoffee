@@ -213,8 +213,6 @@ Smc10eu.prototype.decodeCommands = function(cmd) {
     return msg;
 };
 
-//module.exports.Smc10eu = new Smc10eu();
-
 function getLocalAddresses() {
 
     var interfaces = os.networkInterfaces();
@@ -235,14 +233,16 @@ var adapter = utils.adapter('smartercoffee');
 
 adapter.on('ready', function () {
     if (adapter.config.ip) {
-
-        var auth = {
-            "ip": adapter.config.ip
-        };
-
-        //api = new netatmo(auth);
-        //Hier connect
-
+        
+        var port = 2081;
+        //Connect
+        var smarter = new Smc10eu(adapter.config.ip, port, function(err) 
+        {
+            smarter._eventHandler();
+            smarter._checkHardware(function(result) {
+                console.log(result);
+            });
+        }
         // Update
         requestUpdate();
     } else
