@@ -1,18 +1,18 @@
 {
-  "name": "iobroker.netatmo",
-  "version": "0.0.4",
-  "description": "ioBroker netatmo Adapter",
+  "name": "iobroker.smartercoffee",
+  "version": "0.0.1",
+  "description": "ioBroker Smarter Cofffee  Adapter",
   "author": {
-    "name": "Patrick Arns",
-    "email": "iobroker@patrick-arns.de"
+    "name": "Gerhard Steinwedel",
+    "email": "smartercoffee@steinwedel.de"
   },
   "contributors": [
     {
-      "name": "Patrick Arns",
-      "email": "iobroker@patrick-arns.de"
+      "name": "Gerhard Steinwedel",
+      "email": "snartercoffee@steinwedel.de"
     }
   ],
-  "homepage": "https://github.com/PArns/ioBroker.netatmo/",
+  "homepage": "https://github.com/steinwedel/ioBroker.smartercoffee/",
   "license": "MIT",
   "keywords": [
     "ioBroker",
@@ -25,7 +25,7 @@
     "url": "https://github.com/steinwedel/ioBroker.smartercoffee"
   },
   "dependencies": {
-    "net": "^6.2.0"
+    "net": "^1.0.2"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
